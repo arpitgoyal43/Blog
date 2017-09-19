@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+body {
+	font-family: helvetica,san-sarif;
+	margin: 0 auto;
+	max-width: 800px;
+	background-image: url("working_together_2-wallpaper-3554x1999.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+}
+div {
+	height: 250px;
+	background-size: cover;
+	position: relative;
+	margin: 60px 0 70px 0;
+	border-radius: 12px;
+}
+p {
+	color: rgba(255,255,255,1);
+	background: rgba(0,0,0,1);
+	padding: 10px;
+	text-align: justify;
+	line-height: 28px;
+	position: absolute;
+	bottom: 0;
+	margin: 0px;
+	height: 30px;
+	background: black;
+	background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+	background: -moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+	transition: height .5s;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 75px;
+	margin: 60px 0 0 0;
+	color: #FF5252;
+}
+h2 {
+	text-align: center;
+	margin: -20px 0 60px 0;
+	color: #448AFF;
+}
+.first {
+	background-image: url("http://ste.india.com/sites/default/files/styles/zm_700x400/public/2017/02/07/569263-redminote4lead.jpg?itok=hEZBAdS8");
+}
+.second{
+	background-image: url("http://cdn.gsmarena.com/imgroot/news/16/12/coolpad-cool1-launched-india/-728x314/gsmarena_001.jpg");
+}
+.third {
+	background-image: url("http://i-cdn.phonearena.com/images/articles/239744-thumb/moto-g4-plus-design-middle.jpg");
+}
+.forth {
+	background-image: url("http://static.hub.91mobiles.com/wp-content/uploads/2017/01/Honor-6x-featured.jpeg");
+}
+.price {
+	float: right;
+}
+small {
+	opacity: 0;
+}
+.show-description p {
+	height: 100px;
+}
+.show-description small {
+	opacity: 1;
+}
+@media(max-width: 800px) {
+	h1 {
+		font-size: 50px;
+		margin-top: 20px;
+		line-height: 30px;
+	}
+	h2 {
+		font-size: 20px;
+		margin: 29px 0 30px 0;
+	}
+}
+ul {
+	padding: 10px;
+	background: rgba(0,0,0,.5);
+	text-align: right;
+
+}
+li {
+	display: inline;
+	padding: 0 10px 0 10px;
+	color: white;
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>TECHNOMANIA</h1>
+<h2>       Technology Redefined</h2>
+
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">About me</a></li>
+</ul>
+</header>
+<div class="first">
+<p>Xiaomi Redmi Note 4 <span class="price">$150</span><br />
+<small>The all new Redmi Note 4 the most budget phone of this time.Xiaomi Redmi Note 4 smartphone with 5.50-inch 1080x1920
+ display powered by 2GHz octa-core 625 snapdragon processor alongside 4GB of RAM and 13-megapixel rear camera and having fingerprint
+ scanner on back side.</small></p>
+ </div>
+
+ <div class="second">
+ <p>Coolpad Cool One Dual <span class="price">$210</span><br />
+ <small>Coolpad Cool 1 Dual smartphone with 5.5-inch 1080x1920 display  with corning gorilla glass 3 protection powered by 1.4GHz octa-core processor
+ alongside 3GB of RAM and 13-megapixel rear camera aand having fingerprint scanner on back side.</small></p>
+ </div>
+
+ <div class="third">
+ <p>Motorola Moto G4 Plus <span class="price">$202</span><br />
+ <small>Motorola Moto G4 Plus. The Motorola Moto G4 Plus is powered by 1.5GHz octa-core Qualcomm Snapdragon 617 processor and it
+ comes with 2GB of RAM. The phone packs 16GB of internal storage that can be expanded up to 128GB via a microSD card and having fingerprint
+ scanner on the front.</small></p>
+ </div>
+
+ <div class="forth">
+ <p>Huawei Honor 6X <span class="price">$195</span><br />
+ <small>The Huawei Honor 6X is powered by 1.7GHz octa-core Kirin 655 processor and it comes with 3GB of RAM.The Huawei Honor 6X runs on Android 6.0 and
+ is powered by a 3340mAh non removable battery.The Huawei Honor 6X is a dual SIM (GSM and GSM) smartphone that accepts Nano-SIM and Nano-SIM.The dual-lens
+ 12MP + 2MP rear camera captures colorful HD photos day or night.</small></p>
+</div>
+<script>
+	$('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>
+</html>
